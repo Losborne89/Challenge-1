@@ -16,6 +16,7 @@ public class SpinPropellerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //rotates propeller 
         Vector3 rotation = transform.localEulerAngles;
         rotation.z += Time.deltaTime * anglesPerSecond;
         transform.localEulerAngles = rotation;
